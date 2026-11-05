@@ -1,0 +1,484 @@
+
+/* GENEL AYARLAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7faf7;
+    color: #24352b;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ÜST MENÜ */
+.ust-alan {
+    background: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #16834b;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #34483b;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #16834b;
+}
+
+/* ANA SAYFA */
+.kahraman {
+    padding: 90px 10%;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: linear-gradient(120deg, #e8f6eb, #f6fff6);
+}
+
+.kahraman-icerik {
+    max-width: 600px;
+}
+
+.etiket {
+    color: #16834b;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.kahraman h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin: 20px 0;
+    color: #203c2b;
+}
+
+.kahraman h1 span {
+    color: #159451;
+}
+
+.kahraman p {
+    color: #66756a;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.ana-buton {
+    display: inline-block;
+    background: #16834b;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.ana-buton:hover {
+    background: #0d6336;
+    transform: translateY(-3px);
+}
+
+.kahraman-gorsel {
+    width: 340px;
+    height: 300px;
+    border-radius: 35px;
+    background: linear-gradient(135deg, #b4e8bc, #4caf70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dogal-kart {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.dogal-kart span {
+    font-size: 65px;
+}
+
+.dogal-kart h3 {
+    color: #16834b;
+    margin: 10px 0;
+}
+
+/* İSTATİSTİKLER */
+.istatistikler {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 35px 8%;
+    text-align: center;
+}
+
+.istatistikler h2 {
+    color: #16834b;
+    font-size: 32px;
+}
+
+.istatistikler p {
+    color: #718076;
+    font-size: 14px;
+}
+
+/* GENEL BÖLÜM */
+.bolum {
+    padding: 80px 8%;
+}
+
+.bolum-baslik {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.bolum-baslik span {
+    color: #16834b;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.bolum-baslik h2 {
+    font-size: 34px;
+    margin: 10px 0;
+    color: #243d2d;
+}
+
+.bolum-baslik p {
+    color: #758078;
+}
+
+/* ATIK KARTLARI */
+.atik-kartlari {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.atik-kart {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+    transition: 0.3s;
+}
+
+.atik-kart:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.atik-ikon {
+    font-size: 40px;
+    padding: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.mavi {
+    background: #e1efff;
+}
+
+.sari {
+    background: #fff3d6;
+}
+
+.yesil {
+    background: #dff5e5;
+}
+
+.kirmizi {
+    background: #ffe4e4;
+}
+
+.atik-kart h3 {
+    margin-bottom: 10px;
+}
+
+.atik-kart p {
+    color: #778078;
+    font-size: 14px;
+    min-height: 65px;
+}
+
+.atik-kart span {
+    display: block;
+    color: #16834b;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* REHBER */
+.rehber {
+    padding: 75px 10%;
+    background: #e8f5eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.rehber-icerik {
+    max-width: 650px;
+}
+
+.rehber h2 {
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.rehber p {
+    color: #637268;
+    margin-bottom: 20px;
+}
+
+.rehber ul {
+    list-style: none;
+}
+
+.rehber li {
+    margin: 12px 0;
+    color: #315b3e;
+}
+
+.rehber-gorsel {
+    font-size: 140px;
+}
+
+/* ATIK AYRIŞTIRMA */
+.ayristirma {
+    background: white;
+}
+
+.secim-kutusu {
+    max-width: 550px;
+    margin: auto;
+    padding: 35px;
+    background: #f1f8f2;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.secim-kutusu label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.secim-kutusu select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbdccc;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.secim-kutusu button,
+.soru-kutusu button {
+    background: #16834b;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.secim-kutusu button:hover,
+.soru-kutusu button:hover {
+    background: #0d6336;
+}
+
+#atikSonuc {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #16834b;
+}
+
+/* BİLGİ YARIŞMASI */
+.yarisma {
+    padding: 80px 8%;
+    background: #f0f7f1;
+}
+
+.soru-kutusu {
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.soru-kutusu h3 {
+    margin-bottom: 25px;
+}
+
+.cevaplar {
+    display: grid;
+    gap: 12px;
+}
+
+.cevaplar button {
+    background: #edf5ee;
+    color: #315b3e;
+    border: 1px solid #d7e8d9;
+}
+
+.cevaplar button:hover {
+    background: #d8efdd;
+}
+
+#yarismaSonuc {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#puan {
+    margin: 15px;
+    font-weight: bold;
+    color: #16834b;
+}
+
+#sonrakiSoru {
+    margin-top: 10px;
+}
+
+/* ALT BİLGİ */
+footer {
+    background: #193c29;
+    color: white;
+    padding: 45px 10%;
+    text-align: center;
+}
+
+footer h2 {
+    color: #76d99b;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #d0e3d5;
+}
+
+.telif {
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+/* TELEFON VE TABLET UYUMLULUĞU */
+@media (max-width: 900px) {
+    .atik-kartlari {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kahraman {
+        padding: 60px 7%;
+    }
+
+    .kahraman h1 {
+        font-size: 40px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .ust-alan {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .kahraman {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .kahraman h1 {
+        font-size: 36px;
+    }
+
+    .kahraman-gorsel {
+        width: 100%;
+    }
+
+    .istatistikler {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .atik-kartlari {
+        grid-template-columns: 1fr;
+    }
+
+    .rehber {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rehber h2 {
+        font-size: 27px;
+    }
+
+    .rehber-gorsel {
+        font-size: 90px;
+    }
+
+    .bolum-baslik h2 {
+        font-size: 27px;
+    }
+
+    .secim-kutusu,
+    .soru-kutusu {
+        padding: 22px;
+    }
+}
